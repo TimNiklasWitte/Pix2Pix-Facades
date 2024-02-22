@@ -11,10 +11,6 @@ from matplotlib import pyplot as plt
 
 def main():
 
-
-    
-    
-
     test_ds = tf.keras.utils.image_dataset_from_directory(
             validation_split=0.1,
             subset="validation",

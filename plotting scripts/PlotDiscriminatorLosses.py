@@ -1,7 +1,10 @@
 from LoadDataframe import *
 from matplotlib import pyplot as plt
 
+from scipy.signal import savgol_filter
+
 import seaborn as sns
+import numpy as np
 
 def main():
     log_dir = "../logs"
@@ -10,14 +13,28 @@ def main():
 
     fig, axes = plt.subplots(1, 2, figsize=(15,5))
     
-    lineplot_1 = sns.lineplot(data=df.loc[:, ["discriminator fake loss"]], ax=axes[0], legend=None, label="not smoothed")
+    df1 = df.rename(columns={"discriminator fake loss": "not smoothed"})
+    sns.lineplot(data=df1.loc[:, ["not smoothed"]], ax=axes[0])
     axes[0].set_title("Discriminator fake loss")
-    #lineplot_1.set(ylim=(0.5, 0.7))
+    data = df.loc[:, ["discriminator fake loss"]].to_numpy()
+    data = np.reshape(data, newshape=(-1))
+   
+    smoothed = savgol_filter(data, 51, 3)
+    axes[0].plot(smoothed, label="smoothed")
+    axes[0].legend()
+    axes[0].set_ylabel("Loss")
 
 
-    lineplot_2 = sns.lineplot(data=df.loc[:, ["discriminator real loss"]], ax=axes[1], legend=None, label="not smoothed")
+    df1 = df.rename(columns={"discriminator real loss": "not smoothed"})
+    sns.lineplot(data=df1.loc[:, ["not smoothed"]], ax=axes[1])
     axes[1].set_title("Discriminator real loss")
-    #lineplot_2.set(ylim=(0.5, 0.7))
+    data = df.loc[:, ["discriminator real loss"]].to_numpy()
+    data = np.reshape(data, newshape=(-1))
+   
+    smoothed = savgol_filter(data, 51, 3)
+    axes[1].plot(smoothed, label="smoothed")
+    axes[1].legend()
+    axes[1].set_ylabel("Loss")
 
     # grid
     for ax in axes.flatten():
