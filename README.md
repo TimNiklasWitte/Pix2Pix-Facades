@@ -1,6 +1,28 @@
 # Pix2Pix Facades
 
-Based on the [facades dataset](http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/) from the [Pix2Pix paper](https://arxiv.org/abs/1611.07004) a GAN was trained to create similar images.
+Based on the [Pix2Pix paper](https://arxiv.org/abs/1611.07004) a GAN was trained:
+The generator takes a sketch/plan (drawing!) of a facade as input and generates a corresponding realistic-looking image of the facade as output.
+The GAN was trained on [facades dataset](http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/).
+
+<img src="./plots/results/55.png" width="400" height="200">
+
+<img src="./plots/results/52.png" width="400" height="200">
+
+<img src="./plots/results/4.png" width="400" height="200">
+
+<img src="./plots/results/18.png" width="400" height="200">
+
+<img src="./plots/results/31.png" width="400" height="200">
+
+<img src="./plots/results/32.png" width="400" height="200">
+
+<img src="./plots/results/33.png" width="400" height="200">
+
+<img src="./plots/results/34.png" width="400" height="200">
+
+<img src="./plots/results/36.png" width="400" height="200">
+
+<img src="./plots/results/47.png" width="400" height="200">
 
 
 
