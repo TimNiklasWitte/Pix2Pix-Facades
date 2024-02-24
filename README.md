@@ -120,17 +120,17 @@ _________________________________________________________________
 ### Generated images
 Let's generate some images after training the GAN i.e. after 300 epochs.
 
-<img src="./plots/generated images/4.png" width="500" height="350">
-<img src="./plots/generated images/12.png" width="500" height="350">
-<img src="./plots/generated images/17.png" width="500" height="350">
-<img src="./plots/generated images/19.png" width="500" height="350">
-<img src="./plots/generated images/26.png" width="500" height="350">
-<img src="./plots/generated images/27.png" width="500" height="350">
-<img src="./plots/generated images/28.png" width="500" height="350">
-<img src="./plots/generated images/29.png" width="500" height="350">
-<img src="./plots/generated images/30.png" width="500" height="350">
-<img src="./plots/generated images/43.png" width="500" height="350">
-<img src="./plots/generated images/58.png" width="500" height="350">
+<img src="./plots/results details/4.png" width="500" height="350">
+<img src="./plots/results details/12.png" width="500" height="350">
+<img src="./plots/results details/17.png" width="500" height="350">
+<img src="./plots/results details/19.png" width="500" height="350">
+<img src="./plots/results details/26.png" width="500" height="350">
+<img src="./plots/results details/27.png" width="500" height="350">
+<img src="./plots/results details/28.png" width="500" height="350">
+<img src="./plots/results details/29.png" width="500" height="350">
+<img src="./plots/results details/30.png" width="500" height="350">
+<img src="./plots/results details/43.png" width="500" height="350">
+<img src="./plots/results details/58.png" width="500" height="350">
 
 ### Generated images while training
 

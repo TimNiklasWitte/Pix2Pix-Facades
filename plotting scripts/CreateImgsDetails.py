@@ -94,7 +94,7 @@ def main():
       
 
         plt.tight_layout()
-        plt.savefig(f"../plots/generated images/{idx}.png", bbox_inches='tight')
+        plt.savefig(f"../plots/results details/{idx}.png", bbox_inches='tight')
         plt.close()
 
        
